@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -111,26 +112,34 @@ namespace Parcial2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            //test
+            Registrar(23, 332323232, 220.3);
+            Registrar(27, 332323232, 110.3);
+            Registrar(13, 382323232, 220.3);
+            Registrar(15, 332323232, 20.3);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnRegistrarNuevo_Click(object sender, EventArgs e)
         {
             FormDatos formDatos = new FormDatos();
          
             while (formDatos.ShowDialog() == DialogResult.OK)
             {
-                int nro = Convert.ToInt32(formDatos.textBox1.Text);
-                int dni = Convert.ToInt32(formDatos.textBox2.Text);
-                double pago = Convert.ToDouble(formDatos.textBox3.Text);
+                int nro = Convert.ToInt32(formDatos.tbNroCausa.Text);
+                int dni = Convert.ToInt32(formDatos.tbDNI.Text);
+                double pago = Convert.ToDouble(formDatos.tbMonto.Text);
 
                 Registrar(nro,dni, pago);
+
+                formDatos.tbNroCausa.Clear();
+                formDatos.tbDNI.Clear();
+                formDatos.tbMonto.Clear();
 
                 Text = cont.ToString();
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnVerTodos_Click(object sender, EventArgs e)
         {
             FormVer formVer = new FormVer();
             Ordenar();
@@ -179,12 +188,12 @@ namespace Parcial2
             formVer.Dispose();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btnVerExpedientesPorDNI_Click(object sender, EventArgs e)
         {
             
             FormVer formVer = new FormVer();
 
-            int dni = Convert.ToInt32(textBox1.Text);
+            int dni = Convert.ToInt32(tbDNI.Text);
 
             int m = 0;
             for (int n = 0; n < cont; n++)
@@ -208,18 +217,18 @@ namespace Parcial2
             formVer.Dispose();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btnVerCausa_Click(object sender, EventArgs e)
         {
-            int nro = Convert.ToInt32(textBox2.Text);
+            int nro = Convert.ToInt32(tbNumeroCausa.Text);
             int idx = BuscarPorNro(nro);
 
             FormDatos formDatos = new FormDatos();
 
             if (idx > -1)
             {
-                formDatos.textBox1.Text = Nros[idx].ToString();
-                formDatos.textBox2.Text = Dnis[idx].ToString();
-                formDatos.textBox3.Text = Pagos[idx].ToString("0.00");
+                formDatos.tbNroCausa.Text = Nros[idx].ToString();
+                formDatos.tbDNI.Text = Dnis[idx].ToString();
+                formDatos.tbMonto.Text = Pagos[idx].ToString("0.00");
             }
             else
             {

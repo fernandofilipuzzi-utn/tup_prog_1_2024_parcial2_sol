@@ -28,108 +28,168 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnRegistrarNuevo = new System.Windows.Forms.Button();
+            this.btnVerTodos = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbDNI = new System.Windows.Forms.TextBox();
+            this.btnVerExpedientesPorDNI = new System.Windows.Forms.Button();
+            this.btnVerCausa = new System.Windows.Forms.Button();
+            this.tbNumeroCausa = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // btnRegistrarNuevo
             // 
-            this.button1.Location = new System.Drawing.Point(53, 22);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 49);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Registrar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnRegistrarNuevo.Location = new System.Drawing.Point(8, 37);
+            this.btnRegistrarNuevo.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRegistrarNuevo.Name = "btnRegistrarNuevo";
+            this.btnRegistrarNuevo.Size = new System.Drawing.Size(146, 60);
+            this.btnRegistrarNuevo.TabIndex = 0;
+            this.btnRegistrarNuevo.Text = "Registrar Nuevo";
+            this.btnRegistrarNuevo.UseVisualStyleBackColor = true;
+            this.btnRegistrarNuevo.Click += new System.EventHandler(this.btnRegistrarNuevo_Click);
             // 
-            // button2
+            // btnVerTodos
             // 
-            this.button2.Location = new System.Drawing.Point(188, 22);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(109, 49);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Ver todos";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnVerTodos.Location = new System.Drawing.Point(169, 37);
+            this.btnVerTodos.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVerTodos.Name = "btnVerTodos";
+            this.btnVerTodos.Size = new System.Drawing.Size(146, 60);
+            this.btnVerTodos.TabIndex = 1;
+            this.btnVerTodos.Text = "Ver todos";
+            this.btnVerTodos.UseVisualStyleBackColor = true;
+            this.btnVerTodos.Click += new System.EventHandler(this.btnVerTodos_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(313, 22);
+            this.button3.Location = new System.Drawing.Point(323, 37);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(109, 49);
+            this.button3.Size = new System.Drawing.Size(146, 60);
             this.button3.TabIndex = 2;
             this.button3.Text = "Ver Mayores al Promedio";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // textBox1
+            // tbDNI
             // 
-            this.textBox1.Location = new System.Drawing.Point(79, 98);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
+            this.tbDNI.Location = new System.Drawing.Point(78, 60);
+            this.tbDNI.Margin = new System.Windows.Forms.Padding(4);
+            this.tbDNI.Name = "tbDNI";
+            this.tbDNI.Size = new System.Drawing.Size(166, 22);
+            this.tbDNI.TabIndex = 3;
+            this.tbDNI.Text = "tbDNI";
             // 
-            // button4
+            // btnVerExpedientesPorDNI
             // 
-            this.button4.Location = new System.Drawing.Point(223, 83);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(109, 49);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Ver Expedientes";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnVerExpedientesPorDNI.Location = new System.Drawing.Point(326, 41);
+            this.btnVerExpedientesPorDNI.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVerExpedientesPorDNI.Name = "btnVerExpedientesPorDNI";
+            this.btnVerExpedientesPorDNI.Size = new System.Drawing.Size(146, 60);
+            this.btnVerExpedientesPorDNI.TabIndex = 4;
+            this.btnVerExpedientesPorDNI.Text = "Ver Expedientes";
+            this.btnVerExpedientesPorDNI.UseVisualStyleBackColor = true;
+            this.btnVerExpedientesPorDNI.Click += new System.EventHandler(this.btnVerExpedientesPorDNI_Click);
             // 
-            // button5
+            // btnVerCausa
             // 
-            this.button5.Location = new System.Drawing.Point(223, 148);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(109, 49);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Ver";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.btnVerCausa.Location = new System.Drawing.Point(323, 23);
+            this.btnVerCausa.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVerCausa.Name = "btnVerCausa";
+            this.btnVerCausa.Size = new System.Drawing.Size(146, 60);
+            this.btnVerCausa.TabIndex = 5;
+            this.btnVerCausa.Text = "Ver ";
+            this.btnVerCausa.UseVisualStyleBackColor = true;
+            this.btnVerCausa.Click += new System.EventHandler(this.btnVerCausa_Click);
             // 
-            // textBox2
+            // tbNumeroCausa
             // 
-            this.textBox2.Location = new System.Drawing.Point(79, 163);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 6;
+            this.tbNumeroCausa.Location = new System.Drawing.Point(76, 42);
+            this.tbNumeroCausa.Margin = new System.Windows.Forms.Padding(4);
+            this.tbNumeroCausa.Name = "tbNumeroCausa";
+            this.tbNumeroCausa.Size = new System.Drawing.Size(165, 22);
+            this.tbNumeroCausa.TabIndex = 6;
+            this.tbNumeroCausa.Text = "tbNumeroCausa";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnRegistrarNuevo);
+            this.groupBox1.Controls.Add(this.btnVerTodos);
+            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Location = new System.Drawing.Point(16, 14);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(486, 123);
+            this.groupBox1.TabIndex = 7;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Expedientes";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.btnVerExpedientesPorDNI);
+            this.groupBox2.Controls.Add(this.tbDNI);
+            this.groupBox2.Location = new System.Drawing.Point(13, 146);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(489, 110);
+            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Ver Expedientes de una persona";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.btnVerCausa);
+            this.groupBox3.Controls.Add(this.tbNumeroCausa);
+            this.groupBox3.Location = new System.Drawing.Point(16, 264);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox3.Size = new System.Drawing.Size(486, 95);
+            this.groupBox3.TabIndex = 9;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Ver Expediente";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(434, 209);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(510, 371);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnRegistrarNuevo;
+        private System.Windows.Forms.Button btnVerTodos;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbDNI;
+        private System.Windows.Forms.Button btnVerExpedientesPorDNI;
+        private System.Windows.Forms.Button btnVerCausa;
+        private System.Windows.Forms.TextBox tbNumeroCausa;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }
 
