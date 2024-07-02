@@ -37,7 +37,7 @@ namespace Parcial2
                 sum += Pagos[n];
             }
             if(cont>0)
-                promedio=sum/sum;
+                promedio=sum/cont;
 
             return promedio;
         }
@@ -54,11 +54,13 @@ namespace Parcial2
 
             for (int n = 0; n < cont; n++)
             {
-                if (Pagos[cont] > promedio)
+                if (Pagos[n] > promedio)
                 {
                     cpyNros[cpyCont] = Nros[n];
                     cpyDnis[cpyCont] = Dnis[n];
                     cpyPagos[cpyCont] = Pagos[n];
+
+                    cpyCont++;
                 }
             }
         }
