@@ -30,7 +30,7 @@
         {
             this.btnRegistrarNuevo = new System.Windows.Forms.Button();
             this.btnVerTodos = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnVerMayProm = new System.Windows.Forms.Button();
             this.tbDNI = new System.Windows.Forms.TextBox();
             this.btnVerExpedientesPorDNI = new System.Windows.Forms.Button();
             this.btnVerCausa = new System.Windows.Forms.Button();
@@ -65,16 +65,16 @@
             this.btnVerTodos.UseVisualStyleBackColor = true;
             this.btnVerTodos.Click += new System.EventHandler(this.btnVerTodos_Click);
             // 
-            // button3
+            // btnVerMayProm
             // 
-            this.button3.Location = new System.Drawing.Point(323, 37);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(146, 60);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Ver Mayores al Promedio";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnVerMayProm.Location = new System.Drawing.Point(323, 37);
+            this.btnVerMayProm.Margin = new System.Windows.Forms.Padding(4);
+            this.btnVerMayProm.Name = "btnVerMayProm";
+            this.btnVerMayProm.Size = new System.Drawing.Size(146, 60);
+            this.btnVerMayProm.TabIndex = 2;
+            this.btnVerMayProm.Text = "Ver Mayores al Promedio";
+            this.btnVerMayProm.UseVisualStyleBackColor = true;
+            this.btnVerMayProm.Click += new System.EventHandler(this.btnVerMayProm_Click);
             // 
             // tbDNI
             // 
@@ -120,7 +120,7 @@
             // 
             this.groupBox1.Controls.Add(this.btnRegistrarNuevo);
             this.groupBox1.Controls.Add(this.btnVerTodos);
-            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.btnVerMayProm);
             this.groupBox1.Location = new System.Drawing.Point(16, 14);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
@@ -182,7 +182,7 @@
 
         private System.Windows.Forms.Button btnRegistrarNuevo;
         private System.Windows.Forms.Button btnVerTodos;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnVerMayProm;
         private System.Windows.Forms.TextBox tbDNI;
         private System.Windows.Forms.Button btnVerExpedientesPorDNI;
         private System.Windows.Forms.Button btnVerCausa;
