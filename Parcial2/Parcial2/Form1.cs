@@ -56,8 +56,8 @@ namespace Parcial2
             {
                 if (Pagos[cont] > promedio)
                 {
-                    cpyNros[cpyCont] = Dnis[n];
-                    cpyDnis[cpyCont] = Nros[n];
+                    cpyNros[cpyCont] = Nros[n];
+                    cpyDnis[cpyCont] = Dnis[n];
                     cpyPagos[cpyCont] = Pagos[n];
                 }
             }
@@ -162,19 +162,25 @@ namespace Parcial2
         {
             FormVer formVer=   new FormVer();
             /*
+             * 
+             * forma sencilla para cuando no me pide ordenar los datos ordenados
+             * 
             double promedio = CalcularPromedio();
 
             for (int n = 0; n < cont; n++)
             {
                 if (Pagos[cont] > promedio)
                 {
-                    int dni = Dnis[n];
                     int nro = Nros[n];
+                    int dni = Dnis[n];
                     double pago = Pagos[n];
                     formVer.listBox1.Items.Add($"{nro} - {dni} - {pago}");
                 }
             }
             **/
+
+            //forma que me resultaria util para cuando necesito ordenar los datos filtrados
+            CalcularMayPromedio();
 
             for (int n = 0; n < cpyCont; n++)
             {
